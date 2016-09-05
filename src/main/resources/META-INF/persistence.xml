@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="SenlimoDemo">
+        <class>com.invenso.xperido.senlimo.model.db.AccountEntity</class>
+        <class>com.invenso.xperido.senlimo.model.db.ContactEntity</class>
+        <class>com.invenso.xperido.senlimo.model.db.ContractEntity</class>
+        <class>com.invenso.xperido.senlimo.model.db.EmployeeEntity</class>
+        <class>com.invenso.xperido.senlimo.model.db.EventEntity</class>
+        <class>com.invenso.xperido.senlimo.model.db.InvoiceEntity</class>
+        <class>com.invenso.xperido.senlimo.model.db.LineitemEntity</class>
+        <class>com.invenso.xperido.senlimo.model.db.ProductEntity</class>
+        <class>com.invenso.xperido.senlimo.model.db.QuoteEntity</class>
+        <class>com.invenso.xperido.senlimo.model.db.VisitorEntity</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:postgresql://server/senlimo"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.user" value=""/>
+            <property name="javax.persistence.jdbc.password" value="" />
+        </properties>
+    </persistence-unit>
+</persistence>

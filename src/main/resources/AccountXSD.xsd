@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified"
+           elementFormDefault="qualified">
+    <xs:element name="account" type="account"/>
+    <xs:element name="accounts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="account"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="account">
+        <xs:sequence>
+            <xs:element name="AccountID" type="xs:int"/>
+            <xs:element name="AccountName" type="xs:string"/>
+            <xs:element name="AccountNumber" type="xs:int"/>
+            <xs:element name="AccountAddressLine1" type="xs:string"/>
+            <xs:element name="AccountAddressLine2" type="xs:string"/>
+            <xs:element name="AccountAddressLine3" type="xs:string"/>
+            <xs:element name="AccountAddressCity" type="xs:string"/>
+            <xs:element name="AccountAddressZIP" type="xs:string"/>
+            <xs:element name="AccountAddressState" type="xs:string"/>
+            <xs:element name="AccountAddressCountry" type="xs:string"/>
+            <xs:element name="AccountVAT" type="xs:string"/>
+            <xs:element minOccurs="0" name="Contact_Account">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="contact" type="contact"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Account_PrimaryContact" type="contact"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="contact" type="contact"/>
+    <xs:element name="contacts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="contact"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="contact">
+        <xs:sequence>
+            <xs:element name="ContactID" type="xs:int"/>
+            <xs:element name="ContactFullName" type="xs:string"/>
+            <xs:element name="ContactFirstName" type="xs:string"/>
+            <xs:element name="ContactLastName" type="xs:string"/>
+            <xs:element name="ContactGender" type="xs:string"/>
+            <xs:element name="ContactEmail" type="xs:string"/>
+            <xs:element name="ContactTelephoneNumber" type="xs:string"/>
+            <xs:element name="ContactMobilePhone" type="xs:string"/>
+            <xs:element name="ContactJobTitle" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContactMagazineSubscription" type="xs:boolean"/>
+            <xs:element name="ContactProfile" type="xs:string"/>
+            <xs:element name="ContactVsitorBarcode" type="xs:string"/>
+            <xs:element name="ContactCompanyAccount" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

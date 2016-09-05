@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<account>
+	<AccountID>102</AccountID>
+	<AccountName>A Datum Corporation</AccountName>
+	<AccountNumber>102</AccountNumber>
+	<AccountAddressLine1>2137, Birchwood Dr</AccountAddressLine1>
+	<AccountAddressLine2/>
+	<AccountAddressLine3/>
+	<AccountAddressCity>Redmond</AccountAddressCity>
+	<AccountAddressZIP>78214</AccountAddressZIP>
+	<AccountAddressState>WA</AccountAddressState>
+	<AccountAddressCountry>United States</AccountAddressCountry>
+	<AccountVAT/>
+	<Contact_Account>
+		<contact>
+			<ContactID>201</ContactID>
+			<ContactFullName>John Stuart</ContactFullName>
+			<ContactFirstName>John</ContactFirstName>
+			<ContactLastName>Stuart</ContactLastName>
+			<ContactGender>m</ContactGender>
+			<ContactEmail>jstuart@adatumcorp.com</ContactEmail>
+			<ContactTelephoneNumber>+177788807</ContactTelephoneNumber>
+			<ContactMobilePhone>+177788808</ContactMobilePhone>
+			<ContactJobTitle>Account Manager</ContactJobTitle>
+			<ContactMagazineSubscription>true</ContactMagazineSubscription>
+			<ContactProfile>http://www.senlimo.com/content/john-stuart</ContactProfile>
+			<ContactVsitorBarcode>4521365892</ContactVsitorBarcode>
+			<ContactCompanyAccount>102</ContactCompanyAccount>
+		</contact>
+		<contact>
+			<ContactID>202</ContactID>
+			<ContactFullName>David Button</ContactFullName>
+			<ContactFirstName>David</ContactFirstName>
+			<ContactLastName>Button</ContactLastName>
+			<ContactGender>m</ContactGender>
+			<ContactEmail>david.button@adatumcorp.com</ContactEmail>
+			<ContactTelephoneNumber>+1777888902</ContactTelephoneNumber>
+			<ContactMobilePhone>+177788803</ContactMobilePhone>
+			<ContactJobTitle>Marketing Manager</ContactJobTitle>
+			<ContactMagazineSubscription>true</ContactMagazineSubscription>
+			<ContactProfile>http://www.senlimo.com/content/david-button</ContactProfile>
+			<ContactVsitorBarcode>789456123</ContactVsitorBarcode>
+			<ContactCompanyAccount>102</ContactCompanyAccount>
+		</contact>
+		<contact>
+			<ContactID>203</ContactID>
+			<ContactFullName>Dorian Hamilton</ContactFullName>
+			<ContactFirstName>Dorian</ContactFirstName>
+			<ContactLastName>Hamilton</ContactLastName>
+			<ContactGender>m</ContactGender>
+			<ContactEmail>dhamilton@adatumcoorp.com</ContactEmail>
+			<ContactTelephoneNumber>+177788804</ContactTelephoneNumber>
+			<ContactMobilePhone>+177788805</ContactMobilePhone>
+			<ContactJobTitle>Facilities manager</ContactJobTitle>
+			<ContactMagazineSubscription>true</ContactMagazineSubscription>
+			<ContactProfile>http://www.senlimo.com/content/dorian-hamilton</ContactProfile>
+			<ContactVsitorBarcode>1248569547</ContactVsitorBarcode>
+			<ContactCompanyAccount>102</ContactCompanyAccount>
+		</contact>
+		<contact>
+			<ContactID>204</ContactID>
+			<ContactFullName>John Henderson</ContactFullName>
+			<ContactFirstName>John</ContactFirstName>
+			<ContactLastName>Henderson</ContactLastName>
+			<ContactGender>m</ContactGender>
+			<ContactEmail>jhenderson@adatumcorp.com</ContactEmail>
+			<ContactTelephoneNumber>+177788806</ContactTelephoneNumber>
+			<ContactMobilePhone>+177788807</ContactMobilePhone>
+			<ContactJobTitle>Chief Financial Officer</ContactJobTitle>
+			<ContactMagazineSubscription>true</ContactMagazineSubscription>
+			<ContactProfile>http://www.senlimo.com/content/john-henderson</ContactProfile>
+			<ContactVsitorBarcode>2147483647</ContactVsitorBarcode>
+			<ContactCompanyAccount>102</ContactCompanyAccount>
+		</contact>
+		<contact>
+			<ContactID>205</ContactID>
+			<ContactFullName>Otto Hans Schumacher</ContactFullName>
+			<ContactFirstName>Otto Hans</ContactFirstName>
+			<ContactLastName>Schumacher</ContactLastName>
+			<ContactGender>m</ContactGender>
+			<ContactEmail>oschumacher@adatumcorp.com</ContactEmail>
+			<ContactTelephoneNumber>+1777888001</ContactTelephoneNumber>
+			<ContactMobilePhone>+1777888002</ContactMobilePhone>
+			<ContactJobTitle>Senior Account Manager</ContactJobTitle>
+			<ContactMagazineSubscription>true</ContactMagazineSubscription>
+			<ContactProfile>http://www.senlimo.com/content/ottohans-schumacher</ContactProfile>
+			<ContactVsitorBarcode>1547586238</ContactVsitorBarcode>
+			<ContactCompanyAccount>102</ContactCompanyAccount>
+		</contact>
+		<contact>
+			<ContactID>206</ContactID>
+			<ContactFullName>Rene Valdes</ContactFullName>
+			<ContactFirstName>Rene</ContactFirstName>
+			<ContactLastName>Valdes</ContactLastName>
+			<ContactGender>f</ContactGender>
+			<ContactEmail>rene.valdes@adatumcorp.com</ContactEmail>
+			<ContactTelephoneNumber>+1777888003</ContactTelephoneNumber>
+			<ContactMobilePhone>+1777888004</ContactMobilePhone>
+			<ContactJobTitle>Purchasing Assistant</ContactJobTitle>
+			<ContactMagazineSubscription>true</ContactMagazineSubscription>
+			<ContactProfile>http://www.senlimo.com/content/rene-valdes</ContactProfile>
+			<ContactVsitorBarcode>4254587962</ContactVsitorBarcode>
+			<ContactCompanyAccount>102</ContactCompanyAccount>
+		</contact>
+	</Contact_Account>
+	<Account_PrimaryContact>
+		<ContactID>206</ContactID>
+		<ContactFullName>Rene Valdes</ContactFullName>
+		<ContactFirstName>Rene</ContactFirstName>
+		<ContactLastName>Valdes</ContactLastName>
+		<ContactGender>f</ContactGender>
+		<ContactEmail>rene.valdes@adatumcorp.com</ContactEmail>
+		<ContactTelephoneNumber>+1777888003</ContactTelephoneNumber>
+		<ContactMobilePhone>+1777888004</ContactMobilePhone>
+		<ContactJobTitle>Purchasing Assistant</ContactJobTitle>
+		<ContactMagazineSubscription>true</ContactMagazineSubscription>
+		<ContactProfile>http://www.senlimo.com/content/rene-valdes</ContactProfile>
+		<ContactVsitorBarcode>4254587962</ContactVsitorBarcode>
+		<ContactCompanyAccount>102</ContactCompanyAccount>
+	</Account_PrimaryContact>
+</account>

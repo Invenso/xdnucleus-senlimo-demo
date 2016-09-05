@@ -1,0 +1,138 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified"
+           elementFormDefault="qualified">
+    <xs:element name="account" type="account" />
+    <xs:element name="accounts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="account"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="account">
+        <xs:sequence>
+            <xs:element name="AccountID" type="xs:int" />
+            <xs:element name="AccountName" type="xs:string" />
+            <xs:element name="AccountNumber" type="xs:int"/>
+            <xs:element name="AccountAddressLine1" type="xs:string" />
+            <xs:element name="AccountAddressLine2" type="xs:string" />
+            <xs:element name="AccountAddressLine3" type="xs:string" />
+            <xs:element name="AccountAddressCity" type="xs:string" />
+            <xs:element name="AccountAddressZIP" type="xs:string" />
+            <xs:element name="AccountAddressState" type="xs:string" />
+            <xs:element name="AccountAddressCountry" type="xs:string" />
+            <xs:element name="AccountVAT" type="xs:string" />
+            <xs:element name="AccountPrimaryContact" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="contact" type="contact" />
+    <xs:element name="contacts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="contact"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="contact">
+        <xs:sequence>
+            <xs:element name="ContactID" type="xs:int" />
+            <xs:element name="ContactFullName" type="xs:string" />
+            <xs:element name="ContactFirstName" type="xs:string" />
+            <xs:element name="ContactLastName" type="xs:string" />
+            <xs:element name="ContactGender" type="xs:string" />
+            <xs:element name="ContactEmail" type="xs:string" />
+            <xs:element name="ContactTelephoneNumber" type="xs:string" />
+            <xs:element name="ContactMobilePhone" type="xs:string" />
+            <xs:element name="ContactJobTitle" type="xs:string" />
+            <xs:element minOccurs="0" name="ContactMagazineSubscription" type="xs:boolean" />
+            <xs:element name="ContactProfile" type="xs:string" />
+            <xs:element name="ContactVsitorBarcode" type="xs:string" />
+            <xs:element name="ContactCompanyAccount" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="contract" type="contract" />
+    <xs:element name="contracts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="contract"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="contract">
+        <xs:sequence>
+            <xs:element name="ContractID" type="xs:int" />
+            <xs:element name="ContractName" type="xs:string" />
+            <xs:element name="ContractStartDate" type="xs:date" />
+            <xs:element name="ContractEndDate" type="xs:date" />
+            <xs:element minOccurs="0" name="LineItem_Contract">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="lineitem" type="lineitem"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Contract_Account" type="account"/>
+            <xs:element name="Contract_Contact" type="contact"/>
+            <xs:element name="Contract_Owner" type="employee"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="employee" type="employee" />
+    <xs:element name="employees">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="employee"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="employee">
+        <xs:sequence>
+            <xs:element name="UserID" type="xs:int" />
+            <xs:element name="UserFullName" type="xs:string" />
+            <xs:element name="UserFirstName" type="xs:string" />
+            <xs:element name="UserLastName" type="xs:string" />
+            <xs:element name="UserGender" type="xs:string" />
+            <xs:element name="UserEmail" type="xs:string" />
+            <xs:element name="UserTelephoneNumber" type="xs:string" />
+            <xs:element name="UserMobilePhone" type="xs:string" />
+            <xs:element name="UserJobTitle" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="lineitem" type="lineitem" />
+    <xs:element name="lineitems">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="lineitem"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lineitem">
+        <xs:sequence>
+            <xs:element name="LineItemID" type="xs:int" />
+            <xs:element name="LineItemQuantity" type="xs:decimal" />
+            <xs:element name="LineItemTotal" type="xs:decimal" />
+            <xs:element minOccurs="0" name="LineItemQuote" type="xs:int" />
+            <xs:element minOccurs="0" name="LineItemInvoice" type="xs:int" />
+            <xs:element minOccurs="0" name="LineItemContract" type="xs:int" />
+            <xs:element name="LineItem_Product" type="product"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="product" type="product" />
+    <xs:element name="products">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="product"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="product">
+        <xs:sequence>
+            <xs:element name="ProductID" type="xs:int" />
+            <xs:element name="ProductName" type="xs:string" />
+            <xs:element name="ProductNumber" type="xs:string" />
+            <xs:element name="ProductType" type="xs:string" />
+            <xs:element name="ProductDescription" type="xs:string" />
+            <xs:element name="ProductPricePerUnit" type="xs:decimal" />
+            <xs:element name="ProductImage" type="xs:string" />
+            <xs:element name="ProductBarcode" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
